@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "commonjs",
+    "lib": [
+      "es2019", "dom"
+    ],
+    "baseUrl": "./",
+    "strict": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "node",
+      "mocha",
+      "chai"
+    ],
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "rootDir": "./lambdas",
+    "sourceMap": false,
+    /* Generates corresponding '.map' file. */
+    "inlineSourceMap": true,
+    /* Emit a single file with source maps instead of having a separate file. */
+    "incremental": true,
+    "useUnknownInCatchVariables": false
+  },
+  "exclude": [
+  ]
+}
