@@ -2,3 +2,4 @@
 target/
 .database
 node_modules/
+solution.cypher
