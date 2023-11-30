@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option java_package = "com.axxes.data.protos";
+option java_outer_classname = "PatientProtos";
+
+enum AnnotationType {
+  afib = 0;
+  pause = 1;
+  brady = 2;
+  tachy = 3;
+}
+
+message Annotation {
+  string id = 1;
+  float start = 2;
+  float end = 3;
+  AnnotationType annotation_type = 4;
+}
+
+message Patient {
+  string hospitalId = 1;
+  string patientId = 2;
+  repeated string sensor_dots = 3;
+  repeated Annotation annotations = 4;
+}

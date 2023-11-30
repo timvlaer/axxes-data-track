@@ -1,0 +1,1 @@
+docker run -v $PWD:/defs namely/protoc-all -f *.proto -l java
